@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('first_last_name');
             $table->string('second_last_name')->nullable();
             $table->date('date_of_birth');
+            $table->set('gender', ['masculine', 'feminine','other']);
             $table->string('email')->unique();
             $table->timestamps();
         });
